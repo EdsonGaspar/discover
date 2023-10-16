@@ -29,7 +29,8 @@ body{
   background-position: center;*/
 }
 #conntainer{
-  width: 588px;
+  width: 100%;
+  max-width: 588px;
  margin: auto;
   
 }
