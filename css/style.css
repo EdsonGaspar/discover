@@ -7,14 +7,14 @@
 }
 :root{
   --text-color:white;
-  --bg-url:url('../assets/Background-dark.png');
+  --bg-url:url('../assets/bg-mobile.jpg');
   --strock-color:rgba(255, 255, 255, 0.50);
   --surface-color: rgba(255, 255 255, 0.50);
   --bg-buttom-efect:url('../assets/MoonStars.svg');
 }
 .light{
   --text-color: black;
-  --bg-url: url('../assets/Background.png');
+  --bg-url: url('../assets/bg-mobile-light.jpg');
   --strock-color:rgba(0, 0, 0, 0.50);
   --surface-color: rgba(0, 0, 0, 0.1);
   --bg-buttom-efect:url('../assets/Sun.svg');
@@ -145,4 +145,14 @@ footer p{
   color: var(--text-color);
   font-weight: 400;
   font-size: 14px;
+}
+/*Media Queries*/
+@media(min-width: 700px){
+  :root{
+    --bg-url:url("../assets/Background-dark.png"); 
+  }
+
+  .light{
+    --bg-url:url("../assets/Background.png");
+  }
 }
