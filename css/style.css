@@ -80,8 +80,9 @@ body{
   -webkit-backdrop-filter: blur(4px);
 }
 .light #switch button{
-  right: 0;
-  left: initial;
+  /*right: 0;
+  left: initial;*/
+  animation: slide-in 0.4s forwards;
 }
 #links{
   padding: 24px;
@@ -154,5 +155,14 @@ footer p{
 
   .light{
     --bg-url:url("../assets/Background.png");
+  }
+}
+/*Animação do button da troca do tema*/
+@keyframes slide-in{
+  from{
+    left: 0;
+  }
+  to{
+    left: 50%;
   }
 }
