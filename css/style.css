@@ -69,6 +69,12 @@ body{
   /*Alinhar posicionamento absoluto no centro do elemento*/
   top: 50%;
   transform: translateY(-50%);
+
+  animation: slide-back .4s;
+}
+#switch button:hover{
+  cursor: pointer;
+  outline: 8px solid rgba(128, 128, 128, 0.486);
 }
 #switch span{
   display: block;
@@ -164,5 +170,13 @@ footer p{
   }
   to{
     left: 50%;
+  }
+}
+@keyframes slide-back {
+  from{
+    left: 50%;
+  }
+  to{
+    left: 0;
   }
 }
